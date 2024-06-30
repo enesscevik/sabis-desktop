@@ -1,0 +1,137 @@
+.loginPage {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  animation: up 1s ease;
+}
+.backDark {
+  background-color: #282c34;
+  color: white;
+  border: 2px solid #282c34;
+  box-shadow: 0px 0px 10px #6a646480;
+}
+.backLight {
+  background-color: aliceblue;
+  color: #282c34;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px #ffffff80;
+}
+
+.alert {
+  width: 60vw;
+  height: 10vh;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 3vmin;
+}
+
+.form {
+  width: 50vw;
+  height: 40vh;
+  color: black;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text {
+  font-size: 2.5vmin;
+  margin: 1vh 2vw 0vh 2vw;
+  transition: 0.3s ease;
+  transform: translate(14vw, 6.7vh);
+  padding-left: 1vw;
+  cursor: default;
+}
+.textLight {
+  background-color: aliceblue;
+  color: #282c34;
+}
+.textDark {
+  background-color: #282c34;
+  color: aliceblue;
+}
+.butLight {
+  background-color: #282c34;
+  color: aliceblue;
+}
+.butDark {
+  background-color: aliceblue;
+  color: #282c34;
+}
+/* @keyframes a {
+  0% {
+    transform: translate(-14vw, 6.7vh);
+  }
+  60% {
+    transform: translate(0vw, 6.7vh);
+  }
+  100% {
+    transform: translate(14vw, 6.7vh);
+  }
+} */
+.input {
+  font-size: 3.5vmin;
+  margin: 1vh 2vw 2vh 2vw;
+  border-radius: 0px;
+  padding-inline-start: 2vw;
+  padding-inline-end: 2vw;
+}
+.input:focus {
+  outline: none;
+  border-bottom: 2.4px solid #282c34;
+}
+.inputLight {
+  background-color: aliceblue;
+  border-bottom: 2px solid #282c34;
+  color: rgb(94, 88, 88);
+  border: 0px solid black;
+}
+.inputDark {
+  background-color: #282c34;
+  border-bottom: 2px solid aliceblue;
+  color: rgb(190, 188, 188);
+  border: 0px solid white;
+}
+
+.button {
+  width: 15vw;
+  height: 4vh;
+  margin: 5vh 0 0 0;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  font-size: small;
+  cursor: pointer;
+}
+
+.button:hover {
+  width: 17vw;
+}
+.button:active {
+  width: 16vw;
+}
+
+.icon1 {
+  transform: translate(-850%, -830%);
+}
+.icon2 {
+  transform: translate(-850%, -600%);
+}

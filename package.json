@@ -1,0 +1,78 @@
+{
+  "name": "sabis-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "sabis is available on your desktop",
+  "author": "Enes Çevik",
+  "main": "main.js",
+  "license": "MIT",
+  "build": {
+    "appId": "sabis-desktop",
+    "icon": "public/logo512.png",
+    "productName": "Sabis Desktop",
+    "files": [
+      "build/**/*",
+      "main.js",
+      "preload.js"
+    ],
+    "extraMetadata": {
+      "main": "main.js"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {},
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "homepage": "./",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "concurrently": "^8.2.2",
+    "electron": "^31.0.2",
+    "electron-builder": "^24.13.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "wait-on": "^7.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "wait-on http://localhost:3000 && electron .",
+    "electron-dev": "concurrently \"npm run start\" \"npm run electron\"",
+    "preelectron-pack": "npm run build",
+    "electron-pack": "electron-builder"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "electron-serve": "^2.0.0",
+    "fs-extra": "^11.2.0",
+    "puppeteer": "^22.12.0"
+  }
+}
